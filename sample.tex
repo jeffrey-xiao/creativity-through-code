@@ -1,0 +1,110 @@
+\documentclass[11pt, letterpaper]{article}
+
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{booktabs}
+
+\title{Week 1: Productivity Tools}
+\date{2015-10-30}
+\author{Creativity Through Code}
+
+\begin{document}
+	\maketitle
+	\newpage
+	\begin{abstract}
+		Before delving into the actual specifics of web development, we will be introducing various productivity tools as well as a “development environment” to make your life easier.
+	\end{abstract}
+	\section{Programming Environment}
+		\textbf{Brackets} is a modern, lightweight, and open source text editor. Some of the very convenient features that it supports include inline editors, live preview, and preprocessor support. Overall, Brackets is a very powerful editor out of the box and it is highly recommended for this course.
+		\\\\
+		\textbf{Download Link:} http://brackets.io/
+		\\\\\\
+		\textbf{Atom} is GitHub's recent ``hackable'' editor. It supports cross-platform editing, built-in package manager, smart autocompletition, file system browser, and multiple panes. It is also easily customizable with thousands of open source packages. Definitely choose this editor if you want to adjust your editor to suit your liking.
+		\\\\
+		\textbf{Download Link:} https://atom.io/
+		\\\\\\
+		\textbf{Sublime Text} is a very sophiscated and beautiful editor. It can support additional packages with its package manager, but the salient aspect about Sublime Text is its slick user interface and amazing features. Sublime text supports Goto Anything, Multiple Selections, Command Palette, Distraction Free Mode, and Split Editing.
+		\\\\
+		\textbf{Download Link:} http://www.sublimetext.com/ 
+	\section{Meteor}
+		\textbf{Meteor} is a complete platform for developing and building web and mobile apps in Javascript. We will be using Meteor throughout the course.
+		\\\\
+		\textbf{Download Link:} https://www.meteor.com/
+	\section{GitHub}
+		\textbf{GitHub} is an essential tool for any programmer that is used for distributed version control, collaborative coding, and source code management. Projects can be uploaded to GitHub as repositories. We will be learning about both the desktop graphical interface and the command-line tool. For a list of commonly used git commands, please refer to Table 1: Commonly Used Git Commands.
+		
+		\begin{table}
+			\begin{center}
+				\caption{Commonly Used Git Commands}
+				\hspace*{-2.5cm}
+				\vspace*{-5cm}
+				\begin{tabular}{c|l|p{5cm} l}
+					\toprule
+					Git Task & Command & Meaning \\
+					\midrule
+					Initialization 
+					
+					& git config --global user.name ``Jeffrey Xiao'' & Configures the author name to be used with your commits \\\cmidrule{2-3}
+									
+					& git config --global user.email jeffrey@xiao.com & Configures the author name to be used with your commits \\
+					
+					\midrule
+					Adding a repository
+					
+					& git init & Creates a new local repository \\\cmidrule{2-3}
+
+					& git clone /path/to/respository & Creates working copy of a local repository \\\cmidrule{2-3}
+										
+					& git clone https://github.com/USER/REPO \\
+
+					\midrule
+					Adding files
+
+					& git add -A & Adds all files to stage \\\cmidrule{2-3}
+					
+					& git add ``filename'' & Adds ``filename'' to stage \\
+
+					\midrule
+					Committing
+
+					& git commit -m ``Commit Message'' & Commits changes to head (but not yet to the remote repository) \\\cmidrule{2-3}
+
+					& git commit -a & Commits any files you have added with git add or changed \\
+
+					\midrule
+					Pushing
+
+					& git push origin master & Sends changes to the master branch of your remote repository \\
+
+					\midrule
+					Branches
+
+					& git checkout -b ``branchname'' & Creates a new branch and switches to it \\\cmidrule{2-3}
+
+					& git checkout ``branchname'' & Switches from the current branch to branchname \\\cmidrule{2-3}
+
+					& git branch & Tells you what branch you are in currently and lists all the branches in your repo \\\cmidrule{2-3}
+
+					& git branch -d ``branchname'' & Deletes branchname \\\cmidrule{2-3}
+
+					& git branch push origin ``branchname'' & Pushes branchname to your remote repo \\\cmidrule{2-3}
+
+					& git branch push --all origin & Pushes all branches to your remote repo \\\cmidrule{2-3}
+
+					& git branch push origin :``branchname'' & Deletes branchname from your remote repo \\
+
+					\midrule
+					Updating Local Repo
+
+					& git pull & Fetches and merges changes from your remote repo to your working directory \\\cmidrule{2-3}
+					
+					& git merge ``branchname'' & Merges branchname into your active branch \\\cmidrule{2-3}
+
+					& git diff & Views all merge conflicts \\
+
+					\bottomrule
+				\end{tabular}
+				\hspace*{-2cm}
+			\end{center}
+		\end{table}
+\end{document}
