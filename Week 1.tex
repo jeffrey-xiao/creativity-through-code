@@ -3,6 +3,7 @@
 \usepackage{multirow}
 \usepackage{array}
 \usepackage{booktabs}
+\usepackage{courier}
 
 \title{Week 1: Productivity Tools}
 \date{2015-10-30}
@@ -12,7 +13,7 @@
 	\maketitle
 	\newpage
 	\begin{abstract}
-		Before delving into the actual specifics of web development, we will be introducing various productivity tools as well as a “development environment” to make your life easier.
+		Before delving into the actual specifics of web development, we will be introducing various productivity tools as well as a ``development environment'' to make your life easier.
 	\end{abstract}
 	\section{Programming Environment}
 		\textbf{Brackets} is a modern, lightweight, and open source text editor. Some of the very convenient features that it supports include inline editors, live preview, and preprocessor support. Overall, Brackets is a very powerful editor out of the box and it is highly recommended for this course.
@@ -32,75 +33,76 @@
 		\textbf{Download Link:} https://www.meteor.com/
 	\section{GitHub}
 		\textbf{GitHub} is an essential tool for any programmer that is used for distributed version control, collaborative coding, and source code management. Projects can be uploaded to GitHub as repositories. We will be learning about both the desktop graphical interface and the command-line tool. For a list of commonly used git commands, please refer to Table 1: Commonly Used Git Commands.
-		
-		\begin{table}
+
+		\begin{table}[!htb]
+			\vspace*{-4cm}
 			\begin{center}
 				\caption{Commonly Used Git Commands}
 				\hspace*{-2.5cm}
 				\vspace*{-5cm}
-				\begin{tabular}{c|l|p{5cm} l}
+				\begin{tabular}{p{2cm}|l|p{4cm} l}
 					\toprule
 					Git Task & Command & Meaning \\
 					\midrule
 					Initialization 
 					
-					& git config --global user.name ``Jeffrey Xiao'' & Configures the author name to be used with your commits \\\cmidrule{2-3}
+					& \texttt{git config --global user.name "Jeffrey Xiao"} & Configures the author name to be used with your commits \\\cmidrule{2-3}
 									
-					& git config --global user.email jeffrey@xiao.com & Configures the author name to be used with your commits \\
+					& \texttt{git config --global user.email j@x.com} & Configures the author name to be used with your commits \\
 					
 					\midrule
 					Adding a repository
 					
-					& git init & Creates a new local repository \\\cmidrule{2-3}
+					& \texttt{git init} & Creates a new local repository \\\cmidrule{2-3}
 
-					& git clone /path/to/respository & Creates working copy of a local repository \\\cmidrule{2-3}
+					& \texttt{git clone /path/to/respository} & Creates working copy of a local repository \\\cmidrule{2-3}
 										
-					& git clone https://github.com/USER/REPO \\
+					& \texttt{git clone https://github.com/USER/REPO} \\
 
 					\midrule
 					Adding files
 
-					& git add -A & Adds all files to stage \\\cmidrule{2-3}
+					& \texttt{git add -A} & Adds all files to stage \\\cmidrule{2-3}
 					
-					& git add ``filename'' & Adds ``filename'' to stage \\
+					& \texttt{git add "filename"} & Adds ``filename'' to stage \\
 
 					\midrule
 					Committing
 
-					& git commit -m ``Commit Message'' & Commits changes to head (but not yet to the remote repository) \\\cmidrule{2-3}
+					& \texttt{git commit -m "Commit Message"} & Commits changes to head (but not yet to the remote repository) \\\cmidrule{2-3}
 
-					& git commit -a & Commits any files you have added with git add or changed \\
+					& \texttt{git commit -a} & Commits any files you have added with git add or changed \\
 
 					\midrule
 					Pushing
 
-					& git push origin master & Sends changes to the master branch of your remote repository \\
+					& \texttt{git push origin master} & Sends changes to the master branch of your remote repository \\
 
 					\midrule
 					Branches
 
-					& git checkout -b ``branchname'' & Creates a new branch and switches to it \\\cmidrule{2-3}
+					& \texttt{git checkout -b "branchname"} & Creates a new branch and switches to it \\\cmidrule{2-3}
 
-					& git checkout ``branchname'' & Switches from the current branch to branchname \\\cmidrule{2-3}
+					& \texttt{git checkout "branchname"} & Switches from the current branch to branchname \\\cmidrule{2-3}
 
-					& git branch & Tells you what branch you are in currently and lists all the branches in your repo \\\cmidrule{2-3}
+					& \texttt{git branch} & Tells you what branch you are in currently and lists all the branches in your repo \\\cmidrule{2-3}
 
-					& git branch -d ``branchname'' & Deletes branchname \\\cmidrule{2-3}
+					& \texttt{git branch -d "branchname"} & Deletes branchname \\\cmidrule{2-3}
 
-					& git branch push origin ``branchname'' & Pushes branchname to your remote repo \\\cmidrule{2-3}
+					& \texttt{git branch push origin "branchname"} & Pushes branchname to your remote repo \\\cmidrule{2-3}
 
-					& git branch push --all origin & Pushes all branches to your remote repo \\\cmidrule{2-3}
+					& \texttt{git branch push --all origin} & Pushes all branches to your remote repo \\\cmidrule{2-3}
 
-					& git branch push origin :``branchname'' & Deletes branchname from your remote repo \\
+					& \texttt{git branch push origin :"branchname"} & Deletes branchname from your remote repo \\
 
 					\midrule
 					Updating Local Repo
 
-					& git pull & Fetches and merges changes from your remote repo to your working directory \\\cmidrule{2-3}
+					& \texttt{git pull} & Fetches and merges changes from your remote repo to your working directory \\\cmidrule{2-3}
 					
-					& git merge ``branchname'' & Merges branchname into your active branch \\\cmidrule{2-3}
+					& \texttt{git merge "branchname"} & Merges branchname into your active branch \\\cmidrule{2-3}
 
-					& git diff & Views all merge conflicts \\
+					& \texttt{git diff} & Views all merge conflicts \\
 
 					\bottomrule
 				\end{tabular}
