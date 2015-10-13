@@ -1,0 +1,61 @@
+\documentclass[11pt, letterpaper]{article}
+
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{courier}
+\usepackage{makecell}
+\usepackage{listings}
+\usepackage{graphicx}
+
+\graphicspath{{/}}
+
+\title{Sheet 3: Productivity Tools}
+\date{2015-10-30}
+\author{Creativity Through Code}
+
+\addtolength{\oddsidemargin}{-.875in}
+\addtolength{\evensidemargin}{-.875in}
+\addtolength{\textwidth}{1.75in}
+
+\addtolength{\topmargin}{-.875in}
+\addtolength{\textheight}{1.75in}
+
+\begin{document}
+	\maketitle
+	\newpage
+	\begin{abstract}
+		We will be expanding on website design by using one of the most used front end framework -- \textbf{Bootstrap}
+	\end{abstract}
+	\section{Introduction}
+		\textbf{Bootstrap} is a free and open-source collection of tools for creating websites and web applications. You can use bootstrap to build beautiful websites that are responsive -- the layout of web pages adjusts dynamically, taking into account the characteristics of the device used.
+	\section{Grids}
+		\subsection{Syntax}
+			\begin{tabular}{c l}
+				\makecell[l]{
+				To begin a row: \texttt{<div class = "row"></div>}\\
+				To begin a column: \texttt{<div class = "col-CLASS-SIZE"></div>}\\
+				\textbf{NB:} The sizes of a row must add up to 12} &\begin{tabular}{c c}
+					\toprule
+					Class & Defintion \\\midrule
+					.xs & Phones \\\midrule
+					.sm & Tablets \\\midrule
+					.md & Desktops \\\midrule
+					.lg & Larger Desktops \\\bottomrule
+				\end{tabular} 
+			\end{tabular}
+		\subsection{Example}
+			\begin{center}
+				\lstset{language=HTML, showspaces=false, showstringspaces=false, tabsize=1, breaklines=true}
+				\begin{lstlisting}
+					<div class = "row">
+						<div class = "col-md-1">.col-md-1</div>
+						<div class = "col-md-2">.col-md-2</div>
+						<div class = "col-md-3">.col-md-3</div>
+						<div class = "col-md-4">.col-md-4</div>
+						<div class = "col-md-2">.col-md-2</div>
+					</div>
+				\end{lstlisting}
+			\end{center}
+			\includegraphics[scale = 0.37]{GridExample}
+\end{document}
