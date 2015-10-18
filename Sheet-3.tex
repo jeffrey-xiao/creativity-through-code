@@ -32,17 +32,19 @@
 	\section{Grids}
 		\subsection{Syntax}
 			\begin{tabular}{c l}
-				\makecell[l]{
-				To begin a row: \texttt{<div class = "row"></div>}\\
-				To begin a column: \texttt{<div class = "col-CLASS-SIZE"></div>}\\
-				\textbf{NB:} The sizes of a row must add up to 12} &\begin{tabular}{c c}
+				\begin{tabular}{c c}
 					\toprule
 					Class & Defintion \\\midrule
 					.xs & Phones \\\midrule
 					.sm & Tablets \\\midrule
 					.md & Desktops \\\midrule
 					.lg & Larger Desktops \\\bottomrule
-				\end{tabular} 
+				\end{tabular} &
+				\makecell[l]{
+					To begin a row: \texttt{<div class = "row"></div>}\\
+					To begin a column: \texttt{<div class = "col-CLASS-SIZE"></div>}\\
+					\textbf{NB:} The sizes represent the proportion of the cells and must add to 12
+				}
 			\end{tabular}
 		\subsection{Example}
 			\begin{center}
